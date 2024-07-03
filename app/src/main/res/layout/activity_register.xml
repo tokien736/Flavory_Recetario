@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FFFFFF"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvRegisterTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crear una cuenta"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvWelcomeSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido a su nueva cuenta"
+        android:textSize="16sp"
+        android:layout_below="@id/tvRegisterTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asegúrese de que su contraseña sea segura y segura para la seguridad de su cuenta."
+        android:textSize="14sp"
+        android:layout_below="@id/tvWelcomeSubtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etRegisterEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduce tu correo electrónico"
+        android:layout_below="@id/tvDescription"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Establecer una contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/etRegisterEmail"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"/>
+
+    <EditText
+        android:id="@+id/etConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar la contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@android:drawable/editbox_background"
+        android:textColor="#000000"
+        android:textColorHint="#A9A9A9"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crear una cuenta"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5733"
+        app:cornerRadius="10dp" />
+
+    <TextView
+        android:id="@+id/tvLoginInstead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inicia sesión en su lugar"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@id/btnRegister"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnGoogleRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar con Google"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_google_logo"
+        android:layout_below="@id/tvLoginInstead"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@android:color/white"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>
